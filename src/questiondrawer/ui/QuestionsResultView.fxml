@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="800.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="questiondrawer.ui.QuestionUIController">
+   <children>
+      <VBox>
+         <children>
+            <HBox>
+               <children>
+                  <TableView fx:id="table1" prefHeight="800.0" prefWidth="380.0">
+                    <columns>
+                      <TableColumn fx:id="studentNumberColumn1" prefWidth="190.0" text="Student number" />
+                      <TableColumn fx:id="questionsColumn1" prefWidth="190.0" text="Exam questions" />
+                    </columns>
+                  </TableView>
+                  <Separator orientation="VERTICAL" prefHeight="800.0" prefWidth="39.0" />
+                  <TableView fx:id="table2" layoutX="10.0" layoutY="10.0" prefHeight="800.0" prefWidth="380.0">
+                     <columns>
+                        <TableColumn fx:id="studentNumberColumn2" prefWidth="190.0" text="Student number" />
+                        <TableColumn fx:id="questionsColumn2" prefWidth="190.0" text="Exam questions" />
+                     </columns>
+                  </TableView>
+               </children>
+            </HBox>
+            <Button mnemonicParsing="false" onAction="#generateQuestions" text="Generate" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
